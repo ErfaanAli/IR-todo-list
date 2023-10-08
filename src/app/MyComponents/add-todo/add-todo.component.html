@@ -1,0 +1,14 @@
+<div class="container my-3"><h4>Add a Todo</h4>
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="title">Title <Title></Title></label>
+      <input type="text" class="form-control"  [(ngModel)]="title" id="title" name="title"  placeholder="Enter Title">
+    </div>
+    <div class="form-group">
+      <label for="descreption">Descreption</label>
+      <input type="text" class="form-control" [(ngModel)]="descreption" id="descreption" name="descreption"  placeholder="Enter Descreption">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-sm btn-primary">Add Todo</button>
+  </form>
+</div>
